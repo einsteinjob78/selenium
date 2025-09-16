@@ -62,6 +62,7 @@ public class action {
 		element4.click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 		
+		driver.quit();
 		driver.close();
      
 		

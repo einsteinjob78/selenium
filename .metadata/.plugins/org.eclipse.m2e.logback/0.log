@@ -2479,3 +2479,7 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.po
 2025-09-16 16:49:32,882 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2025-09-16 17:07:24,632 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\gitstuf\123\src\main\resources
 2025-09-16 17:07:24,644 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\gitstuf\123\src\test\resources
+2025-09-16 17:11:10,747 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\gitstuf\123\src\main\resources
+2025-09-16 17:11:10,754 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\gitstuf\123\src\test\resources
+2025-09-16 17:14:21,938 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\gitstuf\123\src\main\resources
+2025-09-16 17:14:21,964 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\gitstuf\123\src\test\resources

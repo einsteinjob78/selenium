@@ -60,10 +60,9 @@ public class action {
 		
 		WebElement element4 = driver.findElement(By.xpath("//p[.='Add to bag']"));
 		element4.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(66));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 		
-		
-		
+		driver.quit();
 		driver.close();
      
 		

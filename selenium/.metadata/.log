@@ -1170,3 +1170,51 @@ Java Model Exception: Error in Java Model (code 1006): 123/src/test/java/Testing
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:189)
 !SUBENTRY 1 org.eclipse.jdt.core 4 1006 2025-09-16 17:16:29.319
 !MESSAGE 123/src/test/java/Testing [in Einstein] is not on its project's build path
+
+!ENTRY org.testng.eclipse 4 4 2025-09-16 17:21:14.148
+!MESSAGE Error
+!STACK 1
+Java Model Exception: Error in Java Model (code 1006): 123/src/test/java/Testing [in Einstein] is not on its project's build path
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getResolvedClasspathEntry(PackageFragmentRoot.java:631)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.mineForTests(TestCodeMiningProvider.java:60)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.lambda$0(TestCodeMiningProvider.java:40)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:507)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1458)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2034)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:189)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2025-09-16 17:21:14.149
+!MESSAGE 123/src/test/java/Testing [in Einstein] is not on its project's build path
+
+!ENTRY org.testng.eclipse 4 4 2025-09-16 17:21:14.154
+!MESSAGE Error
+!STACK 1
+Java Model Exception: Error in Java Model (code 1006): 123/src/test/java/Testing [in Einstein] is not on its project's build path
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getResolvedClasspathEntry(PackageFragmentRoot.java:631)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.mineForTests(TestCodeMiningProvider.java:60)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.lambda$0(TestCodeMiningProvider.java:40)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:507)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1458)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2034)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:189)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2025-09-16 17:21:14.154
+!MESSAGE 123/src/test/java/Testing [in Einstein] is not on its project's build path
+
+!ENTRY org.testng.eclipse 4 4 2025-09-16 17:21:14.537
+!MESSAGE Error
+!STACK 1
+Java Model Exception: Error in Java Model (code 1006): 123/src/test/java/Testing [in Einstein] is not on its project's build path
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getResolvedClasspathEntry(PackageFragmentRoot.java:631)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.mineForTests(TestCodeMiningProvider.java:60)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.lambda$0(TestCodeMiningProvider.java:40)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:507)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1458)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2034)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:189)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2025-09-16 17:21:14.537
+!MESSAGE 123/src/test/java/Testing [in Einstein] is not on its project's build path

@@ -27,19 +27,7 @@ public class TestNg {
 	}
 	
 
-@Test (groups = "one")
 	
-	public void gtrr() {
-		
-		System.out.println("T-1");
-	}
-	
-@Test (groups = "one")
-
-public void gtrvfdfgr() {
-	
-	System.out.println("T-1");
-}
 	@AfterMethod (groups = "one")
 	 
 	public void vri() {

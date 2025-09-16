@@ -1,5 +1,6 @@
 package Testing;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -59,7 +60,7 @@ public class action {
 		
 		WebElement element4 = driver.findElement(By.xpath("//p[.='Add to bag']"));
 		element4.click();
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 		
 		driver.close();
      

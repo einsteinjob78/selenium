@@ -1,0 +1,2 @@
+INDEX VERSION 1.134+C:\gitstuf\selenium\.metadata\.plugins\org.eclipse.jdt.core
+902051319.index

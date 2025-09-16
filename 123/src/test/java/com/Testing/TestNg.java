@@ -1,0 +1,45 @@
+package com.Testing;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
+
+
+public class TestNg {
+	
+	
+	
+	@BeforeMethod (groups = "two")
+
+	public void bri() {
+		
+		System.out.println("T-2");
+	}
+	@Test (groups = "one")
+	
+	public void one() {
+		
+		System.out.println("T-1");
+	}
+	
+
+	
+	@AfterMethod (groups = "one")
+	 
+	public void vri() {
+		System.out.println("T-3");
+	}
+	
+	
+	@Test (groups = "two")
+	public void gri() {
+		System.out.println("t-4");
+
+	}
+}
+
+

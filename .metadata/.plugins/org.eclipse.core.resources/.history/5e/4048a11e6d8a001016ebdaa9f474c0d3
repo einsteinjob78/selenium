@@ -1,0 +1,57 @@
+package Testing;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class selenium {
+
+	public static void main(String[] args) throws AWTException {
+		
+		
+		// TODO Auto-generated method stub
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.flipkart.com/");
+		
+		
+		WebElement Mobile = driver.findElement(By.xpath("//span[text()='Mobiles & Tablets']"));
+		Mobile.click();
+		
+		WebElement search = driver.findElement(By.xpath("//input[@name='q']"));
+		search.sendKeys("google pixel 9a");
+		
+		
+		
+		WebElement searchbt = driver.findElement(By.xpath("//button[@type='submit']"));
+		searchbt.click();
+
+		WebElement phone = driver.findElement(By.xpath("//div[text()='Google Pixel 9A (Iris, 256 GB)']"));
+		Actions a = new Actions(driver); 
+		a.contextClick(phone).build().perform();
+		Robot r = 	new Robot();
+		r.keyPress(KeyEvent.VK_DOWN);
+		r.keyPress(KeyEvent.VK_DOWN);
+		
+		
+		
+				
+			}
+
+	}
+		
+		
+		
+		
+		
+
+
+	

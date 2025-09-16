@@ -1,0 +1,88 @@
+package Testing;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class action {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://www.shoppersstop.com/");
+	
+		WebElement women = driver.findElement(By.xpath("(//a[text()='WOMEN'])[1]"));
+		
+		Actions a = new Actions(driver);
+		a.moveToElement(women).build().perform();
+		
+		WebElement womens = driver.findElement(By.xpath("//li[text()='Dresses']"));
+		womens.click();
+		
+		WebElement watches = driver.findElement(By.xpath("//a[text()='WATCHES']"));
+		
+		Actions q = new Actions(driver);
+		q.moveToElement(watches).build().perform();
+		
+		WebElement analog = driver.findElement(By.xpath("(//p[text()='Analog'])[1]"));
+		analog.click();
+		
+		WebElement wat = driver.findElement(By.xpath("//div[contains(text(),'Dial Metallic Multi-')]"));
+		wat.click();
+		
+		Set<String> windows = driver.getWindowHandles();
+//		System.out.println(windows);
+		
+		List<String> list = new ArrayList<String>(windows);
+		driver.switchTo().window(list.get(1));
+		
+		WebElement element = driver.findElement(By.xpath("//input[@type='text']"));
+		element.sendKeys("dress");
+		
+		WebElement element2 = driver.findElement(By.xpath("//input[@type='tel']"));
+		element2.sendKeys("600063");
+		
+		WebElement element3 = driver.findElement(By.xpath("(//div[.='Check'])[2]"));
+		element3.click();
+		
+		WebElement element4 = driver.findElement(By.xpath("//p[.='Add to bag']"));
+		element4.click();
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
+		
+		WebElement element5 = driver.findElement(By.xpath("//p[.='View Bag']"));
+		element5.click();
+		
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(src,new File("D:\\screenshot.png"));
+		
+//		Actions w = new Actions(driver);
+//		q.contextClick(analog).build().perform();
+		
+//		String handle = driver.getWindowHandle();
+		
+		
+				
+				
+		
+		
+		
+		
+		
+
+	}
+
+}

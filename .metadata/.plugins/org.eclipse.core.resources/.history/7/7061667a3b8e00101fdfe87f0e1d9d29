@@ -1,0 +1,41 @@
+package Testing;
+
+import java.awt.Desktop.Action;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class action {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://www.meesho.com/?srsltid=AfmBOoojgVdagrXC9_Q4u128YDsv2Y5qjzgItSr2-hK0R4AZX7-dvD-P");
+		
+		WebElement fash = driver.findElement(By.xpath(""));
+		
+		Actions a = new Actions(driver);
+		a.moveToElement(fash).build().perform();
+		
+		
+		
+//		String handle = driver.getWindowHandle();
+		
+		
+				
+				
+		
+		
+		
+		
+		
+
+	}
+
+}

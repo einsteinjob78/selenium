@@ -1,0 +1,55 @@
+package Testing;
+
+import java.sql.Driver;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class selenium {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.flipkart.com/");
+		
+		
+		WebElement search = driver.findElement(By.xpath("//input[@type='text']"));
+		search.sendKeys("poco phones");
+		
+		WebElement button = driver.findElement(By.xpath("//button[@type='submit']"));
+		button.click();
+		
+		WebElement phone = driver.findElement(By.xpath("//div[contains(text(),'POCO C61 (Mystical Green, 64 GB)')]"));
+		phone.click();
+		
+		String mainpage = driver.getWindowHandle();
+		System.out.println("New window="+mainpage);
+		
+		
+		Set<String> Allpage =  driver.getWindowHandles();
+		for (String Page : Allpage) {
+			if (!Page.equals(mainpage)) {
+				driver.switchTo().window(Page);
+				
+			}
+		}
+		
+		
+		WebElement Buy = driver.findElement(By.xpath("//button[@type='button']"));
+		Buy.click();
+		
+		WebElement Id = driver.findElement(By.xpath("//input[@type='text']"));
+		Id.sendKeys("einsteinjob78@gmail.com");
+		
+	}
+
+
+	
+
+}

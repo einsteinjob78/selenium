@@ -2489,3 +2489,9 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.po
 2025-09-16 17:22:12,538 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\gitstuf\123\src\test\resources
 2025-09-16 17:54:29,914 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\gitstuf\123\src\main\resources
 2025-09-16 17:54:29,921 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\gitstuf\123\src\test\resources
+2025-09-16 18:10:55,650 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\gitstuf\123\src\main\resources
+2025-09-16 18:10:55,656 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\gitstuf\123\src\test\resources
+2025-09-16 18:43:09,083 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\gitstuf\123\src\main\resources
+2025-09-16 18:43:09,089 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\gitstuf\123\src\test\resources
+2025-09-16 18:51:03,672 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\gitstuf\123\src\main\resources
+2025-09-16 18:51:03,679 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\gitstuf\123\src\test\resources

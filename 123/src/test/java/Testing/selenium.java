@@ -49,6 +49,8 @@ public class selenium {
 				
 			}
 			
+			driver.close();
+			
 		}
 		
 		

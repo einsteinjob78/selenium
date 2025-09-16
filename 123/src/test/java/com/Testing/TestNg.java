@@ -17,13 +17,13 @@ public class TestNg {
 
 	public void bri() {
 		
-		System.out.println("T-2");
+		System.out.println("T-4");
 	}
 	@Test (groups = "one")
 	
 	public void one() {
 		
-		System.out.println("T-1");
+		System.out.println("T-7");
 	}
 	
 
@@ -31,25 +31,25 @@ public class TestNg {
 	
 	public void gtrr() {
 		
-		System.out.println("T-1");
+		System.out.println("T-3");
 	}
 	
 @Test (groups = "one")
 
 public void gtrvfdfgr() {
 	
-	System.out.println("T-1");
+	System.out.println("T-6");
 }
 	@AfterMethod (groups = "one")
 	 
 	public void vri() {
-		System.out.println("T-3");
+		System.out.println("T-13");
 	}
 	
 	
 	@Test (groups = "two")
 	public void gri() {
-		System.out.println("t-4");
+		System.out.println("t-54");
 
 	}
 }
